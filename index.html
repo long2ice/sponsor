@@ -17,8 +17,12 @@
             background-color: rgb(40, 42, 54);
         }
 
-        .btn {
+        .btn-pay {
             width: 400px;
+        }
+
+        .btn-crypto {
+            width: 200px;
         }
 
         img {
@@ -39,12 +43,12 @@
 </head>
 <body>
 <div class="container h-100">
-    <div class="title"><h1 class="text-white fw-bold">👋 Hello! I'm long2ice, Thanks for your sponsor!</h1></div>
+    <div class="title"><h1 class="text-white fw-bold">👋 Hello! I'm long2ice. Thanks for your sponsor!</h1></div>
     <div>
-        <a class="btn btn-secondary" target="_blank" href="https://paypal.me/long2ice">PayPal</a>
+        <a class="btn-pay btn btn-secondary" target="_blank" href="https://paypal.me/long2ice">PayPal</a>
     </div>
     <div class="mt-4">
-        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#wechat">WeChatPay</button>
+        <button class="btn-pay btn btn-success" data-bs-toggle="modal" data-bs-target="#wechat">WeChatPay</button>
         <div class="modal fade" id="wechat" data-bs-keyboard="false" tabindex="-1"
              aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -57,13 +61,37 @@
         </div>
     </div>
     <div class="mt-4">
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#alipay">ALiPay</button>
+        <button class="btn-pay btn btn-primary" data-bs-toggle="modal" data-bs-target="#alipay">ALiPay</button>
         <div class="modal fade" id="alipay" data-bs-keyboard="false" tabindex="-1"
              aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
                         <img src="./images/alipay.jpg" alt="alipay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4">
+        <button class="btn-crypto btn btn-warning" data-bs-toggle="modal" data-bs-target="#btc">BTC</button>
+        <div class="modal fade" id="btc" data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./images/btc.jpg" alt="btc">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn-crypto btn btn-light" data-bs-toggle="modal" data-bs-target="#eth">ETH</button>
+        <div class="modal fade" id="eth" data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./images/eth.jpg" alt="eth">
                     </div>
                 </div>
             </div>

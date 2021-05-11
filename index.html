@@ -8,6 +8,8 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="icon" class="js-site-favicon" type="image/svg+xml"
         href="https://github.githubassets.com/favicons/favicon.svg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Sponsor to long2ice</title>
     <style>
         html,
@@ -19,99 +21,108 @@
             background-color: rgb(40, 42, 54);
         }
 
-        .btn-pay {
-            width: 400px;
-        }
-
-        .btn-crypto {
-            width: 198px;
-        }
 
         img {
             width: 100%;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .title {
-            margin-bottom: 8%;
         }
     </style>
 </head>
 
 <body>
-    <div class="container h-100">
-        <div class="title">
-            <h1 class="text-white fw-bold">👋 Hello! I'm long2ice. Thanks for your sponsor!</h1>
-        </div>
-        <div>
-            <a class="btn-pay btn btn-secondary" target="_blank" href="https://paypal.me/long2ice">PayPal</a>
-        </div>
-        <div class="mt-4">
-            <button class="btn-pay btn btn-success" data-bs-toggle="modal" data-bs-target="#wechat">WeChatPay</button>
-            <div class="modal fade" id="wechat" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <img src="./images/wechatpay.png" alt="wechatpay">
-                        </div>
-                    </div>
-                </div>
+    <div class="container h-100 d-flex flex-column justify-content-center aligin-items-center">
+        <div class="d-flex flex-column align-items-center">
+            <div class="title mb-5">
+                <h1 class="text-white fw-bold">👋 Hello! I'm long2ice. Thanks for your sponsor!</h1>
             </div>
-        </div>
-        <div class="mt-4">
-            <button class="btn-pay btn btn-primary" data-bs-toggle="modal" data-bs-target="#alipay">ALiPay</button>
-            <div class="modal fade" id="alipay" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <img src="./images/alipay.jpg" alt="alipay">
-                        </div>
-                    </div>
-                </div>
+            <div class="w-50">
+                <a class="btn btn-secondary w-100" target="_blank" href="https://paypal.me/long2ice"><i
+                        class="fab fa-paypal fa-lg pe-2"></i>PayPal</a>
             </div>
-        </div>
-        <div class="mt-4">
-            <button class="btn-crypto btn btn-warning" data-bs-toggle="modal" data-bs-target="#btc">BTC</button>
-            <div class="modal fade" id="btc" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <div class="input-group">
-                                <input class="form-control" type="text" id="btc-address"
-                                    data-bs-original-title="Copy to clipboard"
-                                    value="19mi3xbAmgpceimHm4mb2BucnD4xBqKrYs">
-                                <button class="btn btn-copy btn-outline-primary"
-                                    data-clipboard-target="#btc-address">Copy
-                                </button>
+            <div class="mt-4 w-50">
+                <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#wechat"><i
+                        class="fab fa-weixin pe-2"></i>WeChatPay</button>
+                <div class="modal fade" id="wechat" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="./images/wechatpay.png" alt="wechatpay">
                             </div>
-                            <img src="./images/btc.jpg" alt="btc">
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="btn-crypto btn btn-light" data-bs-toggle="modal" data-bs-target="#eth">ETH</button>
-            <div class="modal fade" id="eth" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <div class="input-group">
-                                <input class="form-control" type="text" id="eth-address"
-                                    value="0xe5b2daa85d318a79761798c7e15a4e59a367d41c">
-                                <button class="btn btn-copy btn-outline-primary"
-                                    data-clipboard-target="#eth-address">Copy
-                                </button>
+            <div class="mt-4 w-50">
+                <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#alipay"><i
+                        class="fab fa-alipay fa-lg pe-2"></i>ALiPay</button>
+                <div class="modal fade" id="alipay" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="./images/alipay.jpg" alt="alipay">
                             </div>
-                            <img src="./images/eth.jpg" alt="eth">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 w-50 d-flex justify-content-between">
+                <button class="btn btn-warning text-white flex-grow-1" data-bs-toggle="modal" data-bs-target="#btc"><i
+                        class="fab fa-btc fa-lg pe-2"></i>BTC</button>
+                <div class="modal fade" id="btc" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" id="btc-address"
+                                        data-bs-original-title="Copy to clipboard"
+                                        value="19mi3xbAmgpceimHm4mb2BucnD4xBqKrYs">
+                                    <button class="btn btn-copy btn-outline-primary"
+                                        data-clipboard-target="#btc-address">Copy
+                                    </button>
+                                </div>
+                                <img src="./images/btc.jpeg" alt="btc">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-light flex-grow-1 mx-2" data-bs-toggle="modal" data-bs-target="#eth"><i
+                        class="fab fa-ethereum fa-lg pe-2"></i>ETH</button>
+                <div class="modal fade" id="eth" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" id="eth-address"
+                                        value="0xe5b2daa85d318a79761798c7e15a4e59a367d41c">
+                                    <button class="btn btn-copy btn-outline-primary"
+                                        data-clipboard-target="#eth-address">Copy
+                                    </button>
+                                </div>
+                                <img src="./images/eth.jpeg" alt="eth">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button style="background-color: rgb(38,161,123);" class="btn text-white flex-grow-1"
+                    data-bs-toggle="modal" data-bs-target="#usdt"><i
+                        class="fas fa-dollar-sign fa-lg pe-2"></i>USDT</button>
+                <div class="modal fade" id="usdt" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" id="usdt-address"
+                                        value="0xe5b2daa85d318a79761798c7e15a4e59a367d41c">
+                                    <button class="btn btn-copy btn-outline-primary"
+                                        data-clipboard-target="#usdt-address">Copy
+                                    </button>
+                                </div>
+                                <img src="./images/usdt.jpeg" alt="usdt">
+                            </div>
                         </div>
                     </div>
                 </div>

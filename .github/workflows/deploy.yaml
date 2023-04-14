@@ -10,5 +10,5 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.KEY }}
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USERNAME }}
-          TARGET: "/var/www/sponsor"
+          TARGET: "/root/docker/caddy/www/sponsor"
           SOURCE: "./"

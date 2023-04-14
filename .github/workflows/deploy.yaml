@@ -12,3 +12,4 @@ jobs:
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: "/root/docker/caddy/www/sponsor"
           SOURCE: "./"
+          ARGS: "-rlgoDzvc -i --delete"
